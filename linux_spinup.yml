@@ -15,7 +15,7 @@
   tasks:
   - name: Launch an ec2 instance!
     ec2:
-      keypair: bcoursen
+      keypair: ctjon
       group: "{{ server }}"
       image: "{{ image }}"
       type: "{{ type }}"
