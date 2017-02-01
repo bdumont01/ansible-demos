@@ -21,7 +21,7 @@
       type: "{{ type }}"
       region: "{{ ec2_region }}"
       instance_tags:
-          Name: "brian"
+          Name: "ctjon"
           server: "{{ server }}"
       count: "{{ count }}"
       wait: true
