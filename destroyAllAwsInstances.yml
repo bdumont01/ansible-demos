@@ -5,7 +5,7 @@
 
   vars:
     ec2_region: us-west-1
-    ec2_hosts: tag_Name_ctjon
+    ec2_hosts: tag_Name_ctjon_admin
 
   tasks:
   - name: Gather EC2 facts
@@ -17,7 +17,7 @@
   connection: local
 
   vars:
-    ec2_hosts: tag_Name_ctjon
+    ec2_hosts: tag_Name_ctjon_admin
     ec2_region: us-west-1
 
   tasks:
@@ -25,6 +25,6 @@
     ec2:
       region: "{{ ec2_region }}"
       instance_tags:
-        Name: ctjon
+        Name: ctjon_admin
       state: absent
       wait: True
