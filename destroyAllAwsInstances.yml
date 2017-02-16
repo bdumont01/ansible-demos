@@ -13,6 +13,7 @@
 
 - name: Terminate EC2 hosts
   #hosts: localhost
+  hosts: "{{ ec2_hosts }}"
   gather_facts: false
   connection: local
 
