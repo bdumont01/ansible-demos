@@ -15,13 +15,13 @@
   tasks:
   - name: Launch an windows ec2 instance to work on!
     ec2:
-      keypair: bcoursen
+      keypair: ctjon
       group: "{{ security_group }}"
       image: "{{ image }}"
       type: "{{ type }}"
       region: "{{ ec2_region }}"
       instance_tags:
-          Name: "brian"
+          Name: "chris"
           server: "windows"
       count: "{{ count }}"
       wait: true
