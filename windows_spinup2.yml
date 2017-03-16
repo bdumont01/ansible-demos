@@ -10,7 +10,7 @@
     image: ami-afbff1cf
     type: t2.micro
     ansible_winrm_server_cert_validation: ignore
-    name: brian
+    name: chris
     server: windows
     role: conf
 
@@ -23,7 +23,7 @@
         image: "{{ image }}"
         instance_type: "{{ type }}"
         group: "{{ security_group }}"
-        key_name: "bcoursen"
+        key_name: "ctjon"
         instance_tags:
           Name: "{{ name }}"
           server: "{{ server }}"
